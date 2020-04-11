@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/cupertino.dart';
+
 class Question extends StatelessWidget {
-  // this value will never change after its initalazing after
-  // the contructor
   final String questionText;
 
   Question(this.questionText);
@@ -10,13 +10,12 @@ class Question extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      margin: EdgeInsets.all(10),
-      child: Text(
-        questionText,
-        style: TextStyle(fontSize: 28),
-        textAlign: TextAlign.center,
-      ),
-    );
+        width: double.infinity,
+        margin: EdgeInsets.all(10), // abstand in allen in Richtungen 10 Pixel
+        child: Text(
+          questionText,
+          style: TextStyle(fontSize: 28),
+          textAlign: TextAlign.center,
+        ));
   }
 }

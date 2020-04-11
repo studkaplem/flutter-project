@@ -26,10 +26,31 @@ gelernte Sachen notieren:
 to draw smth into the screen
 - the build-method always responsible to return a new Widget
 - Scaffold() give me a basic UI
+- appBar standart design Leiste; STRG + Leerstate für weitere Infos
+- body Inhalt auf den Hauptbereich
 - body can only take 1 Widget!
+- annonyme Funktionen (optionaler Parameter) => Anweisung 
+annonyme Funktionene mit mehreren Anweisungen (optionaler Parameter) => {
+    ...
+    print("bla bla");
+}
+- final niewieder veränderbar; initailisieren ist ok 
+aber danach kann man es nicht mehr ändern
+lässt sich während der Laufzeit einmal setzen
+- const konstante ein Wert der sich nichtmehr ändern lässt
+lässt sich von vornehinein niht ändern 
 - wenn man eine Klasse oder Methode mit "_" kennzeichnet wir es zu private!!!
 - import './...' das ./ deutet darauf hin dass man vom selben file
 wo etwas impotieren kann
 - Datenstrukturen: 
 Map kann auch als Map() oder in der verkürten Form {...} schreiben;
 List kann in verkürter Schreibweise als [...] dargestellt werden;
+- Annotation: 
+@required = have to initalize
+- Beispiele : 
+    final names = ['Max', 'Denis', 'Julie'];
+    final result = names.map((name) => Text(name)).toList();
+erg.: result ist eien Liste von Text() Widgets wo jedes Widget einen anderen
+name von names beinhaltet.
+- kürzere Version von If-Anweisung:
+Bedinung ? Anweisung : Anweisung wenn Bedinung nicht erfüllt
